@@ -1,0 +1,13 @@
+<% unless journal.scrap.nil? %>
+<%  eid="scrapped-note-#{journal.id}" %>
+  <div align="right">
+    <%= link_to_remote l(:show_original_message), 
+              :update => eid,
+              :url => { :controller => :scrap_notes,
+                        :action => :show_scrapped_note,
+                        :id => journal.id } %>
+  </div>
+
+  <div id='scrapped-note-<%= journal.id %>' style="background-color:#e8e8e8">
+  </div>
+<% end %>
