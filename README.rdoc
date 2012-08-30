@@ -1,0 +1,16 @@
+= ScrapNote plugin
+For users who updates Redmine ticket with email. This plugin scraps out references in the reply message.
+
+== Release 0.0.1
+* Initial release. 
+
+== Installation
+0. Follow the Redmine plugin installation steps at: http://www.redmine.org/wiki/redmine/Plugins
+1. Cd to your redmine vendor/plugins dir.
+2. Git-clone the plugin from this repo into a folder in there
+3. Run the plugin migrations +rake db:migrate_plugins+
+4. Restart your Redmine web servers (e.g. mongrel, thin, mod_rails)
+5. Login to your Redmine install as an Administrator
+6. Setup the permissions for the todos module for your roles
+7. Enable the module on a per-project basis as needed.
+
